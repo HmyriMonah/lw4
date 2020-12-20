@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+.buttons {
+  background-color: #fff;
+  color: #0b132a;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px 35px;
+  border-radius: 50px;
+}
+.buttons:hover {
+  background-color: #000;
+  color: white;
+}
+body {
+  background: linear-gradient(to right,#1E4151,#152C37, #12272F);
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+  color:#E0E0E0FF;
+  font-family: Rubik;
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+.inp {
+
+  margin: auto;
+  max-width: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+.input {
+  outline: none;
+  width: 100%;
+  border: none;
+  font-family: Rubik;
+  padding: 16px 12px 0 12px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgba(199, 199, 199, 0.0);
+  box-shadow: inset 0 -1px 0 rgba(199, 199, 199, 0.3);
+  border-color: rgb(199, 199, 199) ;
+  color: #CECECEFF;
+}
+
+
+
