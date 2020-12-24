@@ -8,7 +8,7 @@ module.exports = {
     "ecmaVersion": 12
   },
   "rules": {
-    "linebreak-style":["error","windows"]
+    "linebreak-style": 0
   },
   "parserOptions": {
     "sourceType": "module",
