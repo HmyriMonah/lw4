@@ -18,8 +18,10 @@ const webpack = require('webpack');
 const path = require('path'); // встроенная node.js либа для работы с путями в ОС (не нужно устанавливать через npm)
 
 module.exports = {
+  mode: 'development',
   entry: './src/js/index.js', // точка входа
   output: {
+    publicPath: '',
     filename: 'app.min.js', // имя файла сборки
     path: path.resolve(__dirname, 'build'), // генерируем папку build, куда помещаются все файлы при сборке
   },
@@ -46,6 +48,13 @@ module.exports = {
           },
           'css-loader', // лоадер парсинга css
         ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]',
+        },
       },
     ],
   },

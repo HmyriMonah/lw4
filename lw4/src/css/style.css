@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'), url('../fonts/Rubik-Regular.ttf') format('truetype');
+}
+
 body {
   background: linear-gradient(to right, #1e4151, #152c37, #12272f);
   color: #e0e0e0ff;
   justify-content: center;
+  font: 'Rubik'; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 }
 
 .form-registration {
